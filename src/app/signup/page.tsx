@@ -39,11 +39,11 @@ export default function SignUpPage() {
   ];
 
   const roles = [
-    { id: "owner", label: "Owner/Manage" },
+    { id: "owner", label: "Owner/Manager" },
     // { id: 'manager', label: 'Manager' },
     { id: "tenant", label: "Tenant" },
-    { id: "investor", label: "Investor" },
-    { id: "banker", label: "Banker" },
+    // { id: "investor", label: "Investor" },
+    { id: "banker", label: "Investor/Banker" },
   ];
 
   return (
@@ -68,7 +68,7 @@ export default function SignUpPage() {
             <label className="block text-sm font-medium text-gray-700 mb-2">
               Select Role
             </label>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-1">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-1">
               {roles.map((role) => (
                 <motion.button
                   key={role.id}
