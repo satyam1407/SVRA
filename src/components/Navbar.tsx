@@ -79,7 +79,7 @@ export default function Navbar() {
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
         className={`fixed w-screen z-50 transition-all duration-300 ${
-          isScrolled ? 'bg-white shadow-lg py-3' : 'bg-white py-4'
+          isScrolled ? 'bg-white bg-red-500 shadow-lg py-3' : 'bg-white  bg-blue-500 py-4'
         }`}
       >
         <div className="container mx-auto px-4">
