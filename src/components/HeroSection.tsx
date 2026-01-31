@@ -12,7 +12,7 @@ export default function HeroSection() {
   ];
 
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden bg-red-500">
       {/* Background Image with Gradient Overlay */}
       <div className="absolute inset-0 z-0">
         {/* Background Image - Replace with your actual image */}

@@ -209,7 +209,7 @@ const testimonials = [
 ];
 
 export default function TestimonialsSection() {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(1);
   const navigationPrevRef = useRef(null);
   const navigationNextRef = useRef(null);
   const paginationRef = useRef(null);
@@ -381,7 +381,7 @@ export default function TestimonialsSection() {
 
           {/* Active Testimonial Highlight */}
           <motion.div
-            key={activeIndex}
+            key={activeIndex + 1}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
@@ -391,12 +391,12 @@ export default function TestimonialsSection() {
               <div className="flex flex-col md:flex-row items-center gap-6">
                 <div className="flex-shrink-0">
                   <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center text-white text-xl md:text-2xl font-bold">
-                    {testimonials[activeIndex]?.avatar}
+                    {testimonials[activeIndex + 1]?.avatar}
                   </div>
                 </div>
                 <div className="text-center md:text-left">
                   <div className="flex justify-center md:justify-start mb-2">
-                    {[...Array(testimonials[activeIndex]?.rating || 5)].map((_, i) => (
+                    {[...Array(testimonials[activeIndex + 1]?.rating || 5)].map((_, i) => (
                       <FiStar key={i} className="w-5 h-5 text-yellow-500 fill-current" />
                     ))}
                   </div>

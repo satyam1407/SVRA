@@ -5,13 +5,6 @@ import { FiFileText, FiClipboard, FiBarChart2, FiDollarSign, FiUsers, FiLock, Fi
 
 const features = [
   {
-    icon: <FiFileText />,
-    title: 'Rent Collection & Payments',
-    description: 'Collect rent securely through digital payments, track payment history, and send automatic reminders to reduce delays and improve cash flow.',
-    linkText: 'Learn About Tax Tools',
-    gradient: 'from-blue-500 to-cyan-500',
-  },
-  {
     icon: <FiClipboard />,
     title: 'Smart Rental Agreement Management',
     description: 'Create, manage, and securely store all rental agreements and tenant communications in one centralized, accessible location.',
@@ -38,6 +31,13 @@ const features = [
     description: 'Assign specific roles (Owner, Manager, Tenant, Investor) with tailored permissions, fostering better collaboration and communication.',
     linkText: 'See Role Benefits',
     gradient: 'from-indigo-500 to-blue-500',
+  },
+  {
+    icon: <FiFileText />,
+    title: 'Maintenance & Service Requests',
+    description: 'Allow tenants to submit maintenance requests online, track repair status in real time, and manage service history efficiently to keep properties in top condition.',
+    linkText: 'Learn About Tax Tools',
+    gradient: 'from-blue-500 to-cyan-500',
   },
   {
     icon: <FiLock />,
